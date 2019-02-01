@@ -1,0 +1,4 @@
+.vscode/settings.json
+data/apex-jnb-data-short-out.csv
+__pycache__/*
+generic/__pycache__/*

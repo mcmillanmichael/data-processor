@@ -1,0 +1,41 @@
+{
+    "config": {
+        "inputfile": "data/apex-jnb-data-short.csv",
+        "outputfile": "data/apex-jnb-data-short-out.csv"
+    },
+    "features": [
+        { "name": "VisitId", "delete": true },
+        { "name": "aircraft_reg", "one_hot": true }, 
+        { "name": "aircraft_icao_type", "delete": true }, 
+        { "name": "aicraft_width", "delete": true }, 
+        { "name": "aircraft_length", "delete": true }, 
+        { "name": "sched_arrival", "is_date": true }, 
+        { "name": "arrival_fln", "delete": true },
+        { "name": "arrival_runway", "one_hot": true }, 
+        { "name": "arrival_stand", "one_hot": true }, 
+        { "name": "arrival_gate_count" }, 
+        { "name": "sched_departure", "is_date": true }, 
+        { "name": "departure_fln", "delete": true }, 
+        { "name": "departure_runway", "one_hot": true }, 
+        { "name": "departure_stand", "one_hot": true }, 
+        { "name": "number_of_stands", "preprocess": true }, 
+        { "name": "departure_gate_count", "preprocess": true }, 
+        { "name": "departure_staff_gate_count" }, 
+        { "name": "sched_landed", "is_date": true }, 
+        { "name": "landed", "is_date": true }, 
+        { "name": "sched_onchocks", "is_date": true }, 
+        { "name": "onchocks", "is_date": true }, 
+        { "name": "sched_offchocks", "is_date": true }, 
+        { "name": "offchocks", "is_date": true }, 
+        { "name": "sched_takeoff", "is_date": true }, 
+        { "name": "takeoff", "is_date": true }, 
+        { "name": "arrival_delay", "preprocess": true }, 
+        { "name": "departure_delay", "preprocess": true }, 
+        { "name": "airport_origin", "one_hot": true }, 
+        { "name": "airport_from", "one_hot": true }, 
+        { "name": "airport_current", "one_hot": true }, 
+        { "name": "airport_to", "one_hot": true }, 
+        { "name": "arrival_airline", "one_hot": true }, 
+        { "name": "departure_airline", "one_hot": true }
+    ]
+}
